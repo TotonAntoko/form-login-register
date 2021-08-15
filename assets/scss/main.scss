@@ -87,4 +87,11 @@ button {
   padding: 1.2rem;
   color: whitesmoke;
   cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: linear-gradient(to right, #30225e, #163c55);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+  }
 }
