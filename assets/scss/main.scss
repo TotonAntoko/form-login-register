@@ -52,20 +52,6 @@ form {
     margin-bottom: 1.5rem;
     min-height: 4.4rem;
 
-    input {
-      padding: 0.5rem 1rem 0.5rem 0;
-      background: transparent;
-      border: none;
-      font-family: var(--Montserrat);
-      font-size: 1.3rem;
-      flex: auto;
-      overflow: hidden;
-
-      &:focus {
-        outline: none;
-      }
-    }
-
     .input-icon {
       color: var(--border-color);
       margin: auto;
@@ -74,6 +60,20 @@ form {
         min-width: 4.4rem;
       }
     }
+  }
+}
+
+input {
+  padding: 0.5rem 1rem 0.5rem 0;
+  background: transparent;
+  border: none;
+  font-family: var(--Montserrat);
+  font-size: 1.3rem;
+  flex: auto;
+  overflow: hidden;
+
+  &:focus {
+    outline: none;
   }
 }
 
