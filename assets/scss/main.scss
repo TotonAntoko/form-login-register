@@ -3,7 +3,7 @@
 /* Variables */
 :root {
   --Montserrat: "Montserrat", cursive;
-  --border-color: rgba(0, 0, 0, 0.329);
+  --border-color: rgba(0, 0, 0, 0.652);
 }
 
 * {
@@ -19,6 +19,12 @@ body {
   overflow: hidden;
   background: whitesmoke;
   font-family: var(--Montserrat);
+}
+
+a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--border-color);
 }
 
 .container {
@@ -92,6 +98,16 @@ form {
         font-size: 1.6rem;
         min-width: 4.4rem;
       }
+    }
+  }
+
+  a {
+    margin: -1.2rem 0 1.5rem 0;
+    text-align: right;
+    display: block;
+
+    &:hover {
+      color: #4e4376;
     }
   }
 }
