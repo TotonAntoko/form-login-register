@@ -6,14 +6,16 @@
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 html,
 body {
   font-size: 10px;
   height: 100%;
   overflow: hidden;
-  background: whitesmoke; }
+  background: whitesmoke;
+  font-family: var(--Montserrat); }
 
 .container {
   display: flex;
@@ -36,12 +38,33 @@ form {
     width: 50%;
     margin: 0 0 3rem; }
   form .form-group {
-    display: flex;
-    flex-direction: row-reverse;
+    display: grid;
+    grid-template-columns: 15% 85%;
     border: 1px solid var(--border-color);
     border-radius: 3rem;
     margin-bottom: 1.5rem;
     min-height: 4.4rem; }
+    form .form-group.focus {
+      border: 1px solid;
+      border-color: #2b5876; }
+      form .form-group.focus .form-input h5 {
+        background-color: #fff;
+        color: #2b5876;
+        top: -0.2rem;
+        left: -2rem;
+        font-size: 1.2rem; }
+      form .form-group.focus .input-icon {
+        color: #2b5876; }
+    form .form-group .form-input {
+      position: relative; }
+      form .form-group .form-input h5 {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--border-color);
+        font-size: 1.4rem;
+        transition: 0.4s; }
     form .form-group .input-icon {
       color: var(--border-color);
       margin: auto; }
@@ -50,13 +73,16 @@ form {
         min-width: 4.4rem; }
 
 input {
-  padding: 0.5rem 1rem 0.5rem 0;
-  background: transparent;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: none;
+  padding-right: 1.5rem;
   border: none;
   font-family: var(--Montserrat);
-  font-size: 1.3rem;
-  flex: auto;
-  overflow: hidden; }
+  font-size: 1.3rem; }
   input:focus {
     outline: none; }
 
